@@ -209,7 +209,7 @@ body {
   align-items: center;
   background-color: rgb(25, 0, 48);
   min-width: 100%;
-  min-height: 90vh;
+  min-height: 85vh;
 }
 .heading {
   color: #fff;
@@ -232,5 +232,25 @@ body {
   .paragraph {
     margin-left: 500px;
     margin-right: 500px;
+  }
+}
+.footer {
+  background: #000;
+  height: 55px;
+  margin-bottom: 0px;
+}
+@media (max-height: 789px) {
+  .footer {
+    height: 35px;
+  }
+}
+.footerContent {
+  color: rgb(204, 203, 203);
+  text-align: center;
+  letter-spacing: 0px;
+}
+@media (max-height: 789px) {
+  .footerContent {
+    letter-spacing: 2px;
   }
 }
