@@ -48,14 +48,14 @@ body {
   }
 }
 
-.backgroung {
+.background {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 90vh;
   background-color: rgb(25, 0, 48);
 }
-.backgroung::before {
+.background::before {
   content: '';
   position: absolute;
   height: 100%;
@@ -65,7 +65,7 @@ body {
   background: linear-gradient(#fffb03, #ff7300);
   clip-path: circle(30% at right 70%);
 }
-.backgroung::after {
+.background::after {
   content: '';
   position: absolute;
   height: 100%;
@@ -258,4 +258,48 @@ body {
 .formError {
   font-size: 12px;
   color: rgb(252, 56, 56);
+}
+.QuizQueue {
+  display: flex;
+  justify-content: center;
+  min-height: 90vh;
+}
+.container {
+  display: flex;
+  justify-content: center;
+}
+.queue {
+  height: 100px;
+  width: 700px;
+  border: 2px solid black;
+  border-radius: 20px 20px 20px 20px;
+  box-shadow: 5px 10px #888888;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding: 10px;
+  padding-left: 25px;
+  background-color: rgb(245, 120, 120);
+}
+.queue h3 {
+  color: #000;
+  font-weight: 600;
+  font-size: 0.7cm;
+}
+.queue .detail {
+  display: flex;
+  width: 500px;
+}
+.queue .detail .date {
+  width: 250px;
+}
+.queue .detail .date p {
+  text-align: left;
+  font-size: 0.5cm;
+}
+.queue .detail .status {
+  width: 250px;
+}
+.queue .detail .status h5 {
+  text-align: right;
+  font-weight: 600;
 }

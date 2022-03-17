@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 // import Form from './forms/Form'
 // import Posts from './posts/Posts'
 import { Routes, Route } from 'react-router-dom';
@@ -9,21 +9,19 @@ import Home from './components/home';
 import Login from './components/login';
 import Signup from './components/signUp';
 import Footer from './components/footer';
+import QuizQueue from './components/quizQueue';
 export default function App() {
   return (
-    // <div>App
-    // <Posts/>
-    // <Form/>
-    // </div>
     <>
       <Navbar />
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route exact path="/login" element={<Login />} />
         <Route exact path="/signup" element={<Signup />} />
-        <Route path="*" component={<Home />} />
+        <Route exact path="/quizQueue" element={<QuizQueue />} />
+        <Route path="*" element={<Home />} />
       </Routes>
-      <Footer/>
+      <Footer />
     </>
-  )
+  );
 }

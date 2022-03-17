@@ -29,7 +29,7 @@ const Login = () => {
 
   return (
     <>
-      <div className="backgroung">
+      <div className="background">
         <div className="container1 ">
           <div class="card">
             <div class="content">
